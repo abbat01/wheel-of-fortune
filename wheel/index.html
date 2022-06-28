@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./wheel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <title>Spin Wheel</title>
+  </head>
+  <body>
+    <div class="modal--window">
+      <h2>Перед прокруткой укажите информацию о себе</h2>
+      <div class="inputs">
+        <script type="text/javascript">
+          var submitted = false;
+        </script>
+        <iframe
+          name="hidden_iframe"
+          id="hidden_iframe"
+          style="display: none"
+          onload="if(submitted)
+        {modal.style.display = 'none';}"
+        ></iframe>
+        <form
+          action="111111111"
+          method="post"
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
+        >
+          <div class="group">
+            <input
+              type="text"
+              aria-describedby="i4"
+              name="entry.263647340"
+              required
+            />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label> First Name</label>
+          </div>
+
+          <div class="group">
+            <input
+              type="text"
+              aria-describedby="i11"
+              name="entry.1445837185"
+              required
+            />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Last Name</label>
+          </div>
+
+          <div class="group">
+            <input
+              type="tel"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              aria-describedby="i18"
+              name="entry.1857657097"
+              required
+            />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Mobile Phone</label>
+          </div>
+
+          <div class="group">
+            <input
+              type="text"
+              aria-describedby="i25"
+              name="entry.759199356"
+              required
+            />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+          </div>
+          <button
+            class="button-9"
+            role="button"
+            type="submit"
+            name="send"
+            value="button"
+            onclick="closeModal()"
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+    <button id="spin">Spin</button>
+    <span class="arrow"></span>
+    <div class="container">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+    </div>
+  </body>
+</html>
