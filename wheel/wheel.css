@@ -118,7 +118,8 @@ body{
     height: 100vh;
     background-color: rgba(255, 2555, 255, 0.7);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+	gap: 50px;
     padding: 20px 0;
     flex-direction: column;
     align-items: center;
@@ -292,6 +293,9 @@ body{
 		font-family:sans-serif;
 		color:#fff;
 		left:83px;
+	}
+	h2 {
+		text-align: center;
 	}
 
 }
