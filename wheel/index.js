@@ -16,3 +16,6 @@ function closeModal() {
 console.log(modal)
 modal.style.display = 'none';
 }
+
+
+
