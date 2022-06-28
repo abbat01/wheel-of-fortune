@@ -23,7 +23,7 @@ body{
 	border:15px solid #000;
 	position: relative;
 	overflow: hidden;
-	transition: 1s;
+	transition: 10s;
 }
 
 .container div{
