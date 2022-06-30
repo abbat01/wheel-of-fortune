@@ -16,9 +16,9 @@ modal.style.display = 'none';
 }
 
 
-
+let a;
 function spin1 () {
-let a = [{id: 1, int: 300},{id: 2, int: 300},{id: 3, int: 300},{id: 4, int: 300},{id: 5, int: 300},{id: 6, int: 300}, {id: 7, int: 300}, {id: 8, int: 300}];
+a = [{id: 1, int: 300},{id: 2, int: 300},{id: 3, int: 300},{id: 4, int: 300},{id: 5, int: 300},{id: 6, int: 300}, {id: 7, int: 300}, {id: 8, int: 300}];
 
 let sum = 0;
 for (let i = 0; i < a.length; i++) {
@@ -58,4 +58,13 @@ if (a[i].id === 7) {
 if (a[i].id === 8) {
 	container.style.transform = 'rotate(2205deg)'
 }
+
+setTimeout(() => { 
+	const modalPrize = document.querySelector('.modal--prize');
+	const modalPrizeDiv = document.createElement('div');
+	modalPrizeDiv.innerHTML = `<div class='modal__heading' name="entry.877150294">${a[i].id}</div>`;
+	modalPrize.style.display = 'block';
+	modalPrize.appendChild(modalPrizeDiv);
+	console.log(modalPrize)
+ }, 10000);
 }
