@@ -1,8 +1,10 @@
-const button = document.querySelector('#spin');
-button.addEventListener('click', function() {
-	spin1()
-	button.disabled = true
-})
+const circleC = document.querySelector(".circleC")
+const Frectangle = document.querySelector(".Frectangle")
+const Srectangle = document.querySelector(".Srectangle")
+const heading = document.querySelector('.main__heading')
+const p = document.querySelector('.heading__p')
+
+
 const prize = document.getElementById('prize');
 const time = document.getElementById('time');
 
@@ -16,6 +18,17 @@ let modal = document.querySelector('.modal--window')
 function closeModal() {
 modal.style.display = 'none';
 }
+
+const spinbtn = document.querySelector('.footer__btn')
+spinbtn.addEventListener('click', function() {
+	modal.style.display = 'flex';
+	spinbtn.style.display = 'none'
+	circleC.style.top = '46%'
+	Frectangle.style.top = '32%'
+	Srectangle.style.top = '32%'
+	heading.style.display = 'none'
+	p.style.display = 'none'
+})
 
 window.onload = function() {
 	spin1()
@@ -47,6 +60,7 @@ let randNumber
 return randNumber = a[i].id
 		}
 	function spin2() {
+		validateForm()
 		if (a[i].id === 'Секретный подарок из Алтая') {
 			container.style.transform = 'rotate(1080deg)'
 		}
@@ -71,6 +85,7 @@ return randNumber = a[i].id
 		if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 			container.style.transform = 'rotate(2205deg)'
 		}
+
 		
 		setTimeout(() => { 
 			const modalPrize = document.querySelector('.modal--prize');
@@ -79,7 +94,7 @@ return randNumber = a[i].id
 			modalPrize.style.display = 'block';
 			modalPrize.appendChild(modalPrizeDiv);
 		 }, 10000);
-	}
+		}
 
 
 
@@ -107,6 +122,15 @@ var form = document.getElementById('sheetdb-form');
 			time.value = date;
 			time.setAttribute('name', 'data[time]')
 		}
+		function validateForm() {
+			let x = document.forms["myForm"]["data[first name]"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+		}
+
+
 
 
 

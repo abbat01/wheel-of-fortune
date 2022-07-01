@@ -26,42 +26,43 @@
       <div class="inputs">
         <form
           action="https://sheetdb.io/api/v1/f1ba5r01b26dx"
+          onsubmit="return validateForm()"
           method="post"
           id="sheetdb-form"
+          name="myForm"
         >
           <div class="group">
             <input type="text" name="data[first name]" required />
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label> First Name</label>
-          </div>
-
-          <div class="group">
-            <input type="text" name="data[last name]" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Last Name</label>
-          </div>
-
-          <div class="group">
-            <input type="tel" id="phone" name="data[phone]" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Mobile Phone</label>
-          </div>
-
-          <div class="group">
-            <input type="text" name="data[email]" required />
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Email</label>
+            <label>Имя фамилия</label>
           </div>
 
           <div class="group">
             <input type="text" name="data[screenshot]" required />
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Nick in instagram</label>
+            <label>Ник в инстаграме</label>
+          </div>
+
+          <div class="group">
+            <input
+              type="tel"
+              id="phone"
+              name="data[phone]"
+              pattern="[0-9]+"
+              required
+            />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Мобильный телефон</label>
+          </div>
+
+          <div class="group">
+            <input type="text" name="data[email]" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Электронная почта</label>
           </div>
 
           <div class="group none">
@@ -84,15 +85,20 @@
             type="submit"
             name="send"
             value="button"
-            onclick="closeModal(); spin2()"
+            onclick=" closeModal(); spin2()"
           >
             Отправить
           </button>
         </form>
       </div>
     </div>
-    <button id="spin">Spin</button>
-    <span class="arrow"></span>
+    <h1 class="main__heading">Учавствуй в беспроигрышной лотерее</h1>
+    <p class="heading__p">
+      и получи шанс выиграть
+      <span class="red strong">бесплатное путешествие,</span> скидку
+      <span class="red">в 5%, 10% и 50%,</span> а также секретные подарки из
+      разных стран и многое другое!
+    </p>
     <div class="container">
       <div class="one text">
         Секретный подарок<br />
@@ -123,6 +129,14 @@
         50% скидка на путешествие<br />
         в Каппадокию
       </div>
+    </div>
+    <div class="footer__button">
+      <button class="footer__btn">Крутить!</button>
+    </div>
+    <div class="figures">
+      <div class="circleC"></div>
+      <div class="Frectangle"></div>
+      <div class="Srectangle"></div>
     </div>
   </body>
 </html>
