@@ -17,11 +17,6 @@ function closeModal() {
 modal.style.display = 'none';
 }
 
-const spinbtn = document.querySelector('.footer__btn')
-spinbtn.addEventListener('click', function() {
-	modal.style.display = 'flex';
-})
-
 window.onload = function() {
 	spin1()
 	spin3()
@@ -52,7 +47,6 @@ let randNumber
 return randNumber = a[i].id
 		}
 	function spin2() {
-		validateForm()
 		if (a[i].id === 'Секретный подарок из Алтая') {
 			container.style.transform = 'rotate(1080deg)'
 		}
@@ -77,7 +71,6 @@ return randNumber = a[i].id
 		if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 			container.style.transform = 'rotate(2205deg)'
 		}
-
 		
 		setTimeout(() => { 
 			const modalPrize = document.querySelector('.modal--prize');
@@ -86,7 +79,7 @@ return randNumber = a[i].id
 			modalPrize.style.display = 'block';
 			modalPrize.appendChild(modalPrizeDiv);
 		 }, 10000);
-		}
+	}
 
 
 
@@ -114,15 +107,6 @@ var form = document.getElementById('sheetdb-form');
 			time.value = date;
 			time.setAttribute('name', 'data[time]')
 		}
-		function validateForm() {
-			let x = document.forms["myForm"]["data[first name]"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-		}
-
-
 
 
 
