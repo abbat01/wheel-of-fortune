@@ -26,8 +26,10 @@
       <div class="inputs">
         <form
           action="https://sheetdb.io/api/v1/f1ba5r01b26dx"
+          onsubmit="return validateForm()"
           method="post"
           id="sheetdb-form"
+          name="myForm"
         >
           <div class="group">
             <input type="text" name="data[first name]" required />
@@ -44,7 +46,7 @@
           </div>
 
           <div class="group">
-            <input type="tel" id="phone" name="data[phone]" required />
+            <input type="tel" id="phone" name="data[phone]" pattern="[0-9]+" required />
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Mobile Phone</label>
@@ -84,14 +86,13 @@
             type="submit"
             name="send"
             value="button"
-            onclick="closeModal(); spin2()"
+            onclick=" closeModal(); spin2()"
           >
             Отправить
           </button>
         </form>
       </div>
     </div>
-    <button id="spin">Spin</button>
     <span class="arrow"></span>
     <div class="container">
       <div class="one text">
@@ -123,6 +124,8 @@
         50% скидка на путешествие<br />
         в Каппадокию
       </div>
+      
     </div>
+    <div class="footer__button"><button class="footer__btn">Крутить!</button></div>
   </body>
 </html>
