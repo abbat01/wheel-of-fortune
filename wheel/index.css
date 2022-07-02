@@ -53,6 +53,30 @@ body{
 background: linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(255,134,0,1) 6%, rgba(255,134,0,1) 93%, rgba(0,0,0,1) 97%);
 	
 }
+.circleC {
+	position: absolute;
+	clip-path: none;
+	width: 50px;
+	height: 50px;
+	background: black;
+	z-index: 20;
+	top: 47.5%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 50%;
+}
+.circleC:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17px 50px 17px;
+	border-color: transparent transparent #000000 transparent;
+	top: -20px;
+	left: 5px;
+
+}
 
 
 .container .one{
@@ -303,36 +327,6 @@ h4 {
 	background: rgb(241,255,255);
 	background: linear-gradient(351deg, rgba(241,255,255,1) 0%, rgba(221,216,205,1) 100%);	
 }
-.circleC {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-image: url(./assets/images/\ .jpg);
-	background-position: 100px 0;
-	left: 50%;
-	top: 47.5%;
-	transform: translateX(-50%) translateY(-50%);
-	z-index: 20;
-}
-.Frectangle {
-	position: absolute;
-	top: 30.3%;
-	left: 53.4%;
-	transform: translateX(-50%) translateY(-50%) rotate(22.1deg);
-	width: 7px;
-	height: 230px;
-	background-image: url(./assets/images/\ .jpg);
-}
-.Srectangle {
-	position: absolute;
-	top: 30.3%;
-	left: 46.4%;
-	transform: translateX(-50%) translateY(-50%) rotate(337.9deg);
-	width: 7px;
-	height: 230px;
-	background-image: url(./assets/images/\ .jpg);
-}
 h1 {
 	margin: 0;
 	padding: 0;
@@ -382,22 +376,6 @@ p {
 		font-size: 0.7rem;
 		text-align: center;
 	}
-	.circleC {
-		z-index: 10;
-		width: 25px;
-		height: 25px;
-		top: 45%;
-	}
-	.Frectangle {
-		width: 5px;
-		height: 163px;
-		left: 59.5%;
-	}
-	.Srectangle {
-		width: 5px;
-		height: 163px;
-		left: 40.5%;
-	}
 
 }
 @media (max-width: 320px) {
@@ -433,24 +411,6 @@ p {
 	p {
 		font-size: 0.7rem;
 		text-align: center;
-	}
-	.circleC {
-		z-index: 10;
-		width: 15px;
-		height: 15px;
-		top: 46.2%;
-	}
-	.Frectangle {
-		width: 5px;
-		height: 150px;
-		left: 59.5%;
-		top: 35%;
-	}
-	.Srectangle {
-		width: 5px;
-		height: 150px;
-		left: 40.5%;
-		top: 35%;
 	}
 
 }
