@@ -1,6 +1,4 @@
 const circleC = document.querySelector(".circleC")
-const Frectangle = document.querySelector(".Frectangle")
-const Srectangle = document.querySelector(".Srectangle")
 const heading = document.querySelector('.main__heading')
 const p = document.querySelector('.heading__p')
 
@@ -23,9 +21,7 @@ const spinbtn = document.querySelector('.footer__btn')
 spinbtn.addEventListener('click', function() {
 	modal.style.display = 'flex';
 	spinbtn.style.display = 'none'
-	circleC.style.top = '46%'
-	Frectangle.style.top = '32%'
-	Srectangle.style.top = '32%'
+	circleC.style.top = '47%'
 	heading.style.display = 'none'
 	p.style.display = 'none'
 })
