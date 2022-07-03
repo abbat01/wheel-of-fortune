@@ -423,25 +423,41 @@ p {
 	
 	}
 	.prize__image {
-		display: none;
-		z-index: 2000;
-		background-size: cover;
-		width: 75vw;
-		height: 75vh;
-
-	}
-	.prize4 {
 		position: absolute;
 		top: 30%;
 		justify-content: center;
 		align-items: center;
-		background-image: url(./assets/images/4.PNG);
 		background-repeat: no-repeat;
 		opacity: 1;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		left: 50%;
 		transform: translateX(-50%);
+
+	}
+	.prize1 {
+		background-image: url(./assets/images/1.PNG);
+	}
+	.prize2 {
+		background-image: url(./assets/images/2.PNG);
+	}
+	.prize3 {
+		background-image: url(./assets/images/3.PNG);
+	}
+	.prize4 {
+		background-image: url(./assets/images/4.PNG);
+	}
+	.prize5 {
+		background-image: url(./assets/images/5.PNG);
+	}
+	.prize6 {
+		background-image: url(./assets/images/6.PNG);
+	}
+	.prize7 {
+		background-image: url(./assets/images/7.PNG);
+	}
+	.prize8 {
+		background-image: url(./assets/images/8.PNG);
 	}
 		
 
