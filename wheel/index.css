@@ -60,7 +60,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(255,134,0,1) 6%, rgba(
 	height: 50px;
 	background: black;
 	z-index: 20;
-	top: 47.5%;
+	top: 48.5%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	border-radius: 50%;
@@ -319,21 +319,24 @@ h4 {
 	cursor: pointer;
 	font-size: 2rem;
 	border-radius: 30px;
-	padding: 20px 40px;
+	padding: 10px 25px;
 	text-transform: uppercase;
 	font-family: 'Jost', sans-serif;
 	outline: none;
 	border: 1px solid grey;
 	background: rgb(241,255,255);
-	background: linear-gradient(351deg, rgba(241,255,255,1) 0%, rgba(221,216,205,1) 100%);	
+	background: linear-gradient(351deg, rgba(241,255,255,1) 0%, rgba(221,216,205,1) 100%);
+	color: black;
 }
 h1 {
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 p {
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
 .red {
@@ -342,8 +345,6 @@ p {
 .strong {
 	text-transform: uppercase;
 }
-
-
 @media (max-width: 1440px) {
 	.container {
 		width: 350px;
@@ -384,7 +385,7 @@ p {
 		width: 35px;
 		height: 35px;
 		z-index: 20;
-		top: 45.5%;
+		top: 47.5%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 	}
@@ -397,7 +398,6 @@ p {
 		border-width: 0 12px 35px 12px;
 		border-color: transparent transparent #000000 transparent;
 		top: -20px;
-		left: 5px;
 	
 	}
 
