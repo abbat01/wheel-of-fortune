@@ -45,7 +45,7 @@ let rand;
 let i;
 let randNumber
 		function spin1 () {
-			a = [{id: 'Секретный подарок из Алтая', int: 3},{id: '10% скидка на любое наше путешествие', int: 10},{id: 'Именное полотенце от Fresh Adventures', int: 2},{id: '5% скидка на любое наше путешествие', int: 5000},{id: 'Именная майка от Fresh Adventures', int: 2},{id: 'Секретный подарок из Гималаев', int: 3}, {id: 'Путешествие в Полесье', int: 1}, {id: '50% скидка на путешествие в Каппадокию', int: 0}];
+			a = [{id: 'Секретный подарок из Алтая', int: 3},{id: '10% скидка на любое наше путешествие', int: 20},{id: 'Именное полотенце от Fresh Adventures', int: 2},{id: '5% скидка на любое наше путешествие', int: 500},{id: 'Именная майка от Fresh Adventures', int: 2},{id: 'Секретный подарок из Гималаев', int: 3}, {id: 'Путешествие в Полесье', int: 1}, {id: '50% скидка на путешествие в Каппадокию', int: 0}];
 
 
 		sum = 0;
@@ -61,6 +61,7 @@ let randNumber
 		}
 return randNumber = a[i].id
 		}
+		
 	function spin2() {
 		validateForm()
 		if (a[i].id === 'Секретный подарок из Алтая') {
@@ -87,37 +88,36 @@ return randNumber = a[i].id
 		if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 			container.style.transform = 'rotate(2205deg)'
 		}
-
-		
 		setTimeout(() => { 
 			container.style.filter = 'blur(4px)'
 			const modalPrize = document.querySelector('.modal--prize');
 			circleC.style.top = '48.5%'
 			modalPrize.style.display = 'block';
 			if (a[i].id === 'Секретный подарок из Алтая') {
-				prize1.style.display = 'block'
+				prize1.style.display = 'flex'
 			}
 			if (a[i].id === '10% скидка на любое наше путешествие') {
-				prize2.style.display = 'block'
+				prize2.style.display = 'flex'
 			}
 			if (a[i].id === 'Именное полотенце от Fresh Adventures') {
-				prize3.style.display = 'block'
+				prize3.style.display = 'flex'
 			}
 			if (a[i].id === '5% скидка на любое наше путешествие') {
 				prize4.style.display = 'flex'
 			}
 			if (a[i].id === 'Именная майка от Fresh Adventures') {
-				container.style.transform = 'rotate(1980deg)'
+				prize5.style.display = 'flex'
 			}
 			if (a[i].id === 'Секретный подарок из Гималаев') {
-				container.style.transform = 'rotate(1935deg)'
+				prize6.style.display = 'flex'
 			}
 			if (a[i].id === 'Путешествие в Полесье') {
-				container.style.transform = 'rotate(2250deg)'
+				prize7.style.display = 'flex'
 			}
 			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
-				container.style.transform = 'rotate(2205deg)'
+				prize8.style.display = 'flex'
 			}
+		
 		 }, 10000);
 		}
 
@@ -137,9 +137,10 @@ var form = document.getElementById('sheetdb-form');
         });
 		
 		function spin3() {
-
+			console.log(a[i].id)
 			prize.value = a[i].id;
 			prize.setAttribute('name', 'data[prize]')
+
 		}
 
 		function spin5() {
