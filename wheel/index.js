@@ -90,9 +90,8 @@ return randNumber = a[i].id
 
 		
 		setTimeout(() => { 
+			container.style.filter = 'blur(4px)'
 			const modalPrize = document.querySelector('.modal--prize');
-			heading.style.display = 'none';
-			p.style.display = 'none'
 			circleC.style.top = '48.5%'
 			modalPrize.style.display = 'block';
 			if (a[i].id === 'Секретный подарок из Алтая') {
