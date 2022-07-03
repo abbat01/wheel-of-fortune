@@ -344,7 +344,7 @@ p {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 1440px) {
 	.container {
 		width: 350px;
 		height: 350px;
