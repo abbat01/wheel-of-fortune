@@ -338,6 +338,7 @@ h1 {
 p {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
+	text-align: center;
 }
 .red {
 	color: red;
@@ -433,7 +434,7 @@ p {
 		font-size: 0.9rem;
 	}
 	p {
-		font-size: 0.7rem;
+		font-size: 0.65rem;
 		text-align: center;
 		max-width: 315px;
 	}
