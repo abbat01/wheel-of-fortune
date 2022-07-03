@@ -1,6 +1,14 @@
 const circleC = document.querySelector(".circleC")
 const heading = document.querySelector('.main__heading')
 const p = document.querySelector('.heading__p')
+const prize1 = document.querySelector('.prize1');
+const prize2 = document.querySelector('.prize2');
+const prize3 = document.querySelector('.prize3');
+const prize4 = document.querySelector('.prize4');
+const prize5 = document.querySelector('.prize5');
+const prize6 = document.querySelector('.prize6');
+const prize7 = document.querySelector('.prize7');
+const prize8 = document.querySelector('.prize8');
 
 
 const prize = document.getElementById('prize');
@@ -21,9 +29,7 @@ const spinbtn = document.querySelector('.footer__btn')
 spinbtn.addEventListener('click', function() {
 	modal.style.display = 'flex';
 	spinbtn.style.display = 'none'
-	circleC.style.top = '47%'
-	heading.style.display = 'none'
-	p.style.display = 'none'
+	circleC.style.top = '53%'
 })
 
 window.onload = function() {
@@ -85,10 +91,34 @@ return randNumber = a[i].id
 		
 		setTimeout(() => { 
 			const modalPrize = document.querySelector('.modal--prize');
-			const modalPrizeDiv = document.createElement('h2');
-			modalPrizeDiv.innerHTML = `<div class='modal__heading'>${a[i].id}</div>`;
+			heading.style.display = 'none';
+			p.style.display = 'none'
+			circleC.style.top = '48.5%'
 			modalPrize.style.display = 'block';
-			modalPrize.appendChild(modalPrizeDiv);
+			if (a[i].id === 'Секретный подарок из Алтая') {
+				prize1.style.display = 'block'
+			}
+			if (a[i].id === '10% скидка на любое наше путешествие') {
+				prize2.style.display = 'block'
+			}
+			if (a[i].id === 'Именное полотенце от Fresh Adventures') {
+				prize3.style.display = 'block'
+			}
+			if (a[i].id === '5% скидка на любое наше путешествие') {
+				prize4.style.display = 'flex'
+			}
+			if (a[i].id === 'Именная майка от Fresh Adventures') {
+				container.style.transform = 'rotate(1980deg)'
+			}
+			if (a[i].id === 'Секретный подарок из Гималаев') {
+				container.style.transform = 'rotate(1935deg)'
+			}
+			if (a[i].id === 'Путешествие в Полесье') {
+				container.style.transform = 'rotate(2250deg)'
+			}
+			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
+				container.style.transform = 'rotate(2205deg)'
+			}
 		 }, 10000);
 		}
 
@@ -125,6 +155,37 @@ var form = document.getElementById('sheetdb-form');
     return false;
   }
 		}
+		
+
+		function spin6() {
+			
+			if (a[i].id === 'Секретный подарок из Алтая') {
+				prize1.style.display = 'block'
+			}
+			if (a[i].id === '10% скидка на любое наше путешествие') {
+				container.style.transform = 'rotate(1025deg)'
+			}
+			if (a[i].id === 'Именное полотенце от Fresh Adventures') {
+				container.style.transform = 'rotate(1710deg)'
+			}
+			if (a[i].id === '5% скидка на любое наше путешествие') {
+				container.style.transform = 'rotate(2025deg)'
+			}
+			if (a[i].id === 'Именная майка от Fresh Adventures') {
+				container.style.transform = 'rotate(1980deg)'
+			}
+			if (a[i].id === 'Секретный подарок из Гималаев') {
+				container.style.transform = 'rotate(1935deg)'
+			}
+			if (a[i].id === 'Путешествие в Полесье') {
+				container.style.transform = 'rotate(2250deg)'
+			}
+			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
+				container.style.transform = 'rotate(2205deg)'
+			}
+		}
+
+		
 
 
 
