@@ -484,10 +484,11 @@ z-index: 3000;
 		margin: 40px 0 0 0;
 	}
 	.prize__text {
+		font-family: 'Jost', sans-serif;
 		width: 100%;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		position: absolute;
-		top: 65%;
+		top: 70%;
 		left: 50%;
 		transform: translateX(-50%);
 	}

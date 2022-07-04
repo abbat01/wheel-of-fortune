@@ -124,7 +124,7 @@ return randNumber = a[i].id
 			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 				prize8.style.display = 'flex'
 			}
-			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с вами<br> в ближайшее время<br> &#128155;'
+			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с вами в ближайшее время<br> &#128155;'
 			prizeText.classList.add('prize__text')
 			modalPrize.appendChild(prizeText)
 		
