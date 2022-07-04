@@ -598,7 +598,7 @@ z-index: 3000;
 		width: 100%;
 		font-size: 1.1rem;
 		position: absolute;
-		top: 65%;
+		top: 62%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -607,7 +607,7 @@ z-index: 3000;
 		font-size: 1.1rem;
 		width: 100%;
 		position: absolute;
-		top: 75%;
+		top: 74%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
