@@ -439,17 +439,26 @@ z-index: 3000;
 	background-image: url(./assets/images/IMG_8542.PNG);
 	background-repeat: round;
 }
+.modal--start h1 {
+	font-size: 2rem;
+}
 .modal--start p {
 	text-align: center;
 	margin: 10px 0 0 0;
 }
 .modal--start img {
+	opacity: 0.6;
+	transform: rotate(45deg);
 	position: absolute;
 	width: 250px;
 	height: 250px;
 	top: -100px;
-	left: -20px;
+	left: -70px;
 	z-index: -1;
+}
+.no-strong {
+	font-weight: 700;
+	font-family: 'Jost', sans-serif;
 }
 	.button__start {
 		box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -464,6 +473,12 @@ z-index: 3000;
 		background-position: 200px;
 		color: black;
 		margin-top: 35px;
+	}
+	.modal--start h2 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 40px 0 0 0;
 	}
 @media (max-width: 1440px) {
 	.container {
