@@ -486,18 +486,18 @@ z-index: 3000;
 	.prize__text {
 		font-family: 'Jost', sans-serif;
 		width: 100%;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		position: absolute;
-		top: 65%;
+		top: 55%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
 	.inst__text {
 		font-family: 'Jost',sans-serif;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		width: 100%;
 		position: absolute;
-		top: 82%;
+		top: 63%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -558,7 +558,7 @@ z-index: 3000;
 	}
 	.prize__image {
 		position: absolute;
-		top: 30%;
+		top: 25%;
 		justify-content: center;
 		align-items: center;
 		background-repeat: no-repeat;
