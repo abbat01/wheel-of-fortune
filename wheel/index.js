@@ -95,8 +95,11 @@ return randNumber = a[i].id
 		setTimeout(() => { 
 			container.style.filter = 'blur(4px)'
 			const modalPrize = document.querySelector('.modal--prize');
+			const prizeText = document.createElement('p');
+			
 			circleC.style.top = '48.5%'
 			modalPrize.style.display = 'block';
+			
 			if (a[i].id === 'Секретный подарок из Алтая') {
 				prize1.style.display = 'flex'
 			}
@@ -121,6 +124,9 @@ return randNumber = a[i].id
 			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 				prize8.style.display = 'flex'
 			}
+			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с вами<br> в ближайшее время<br> &#128155;'
+			prizeText.classList.add('prize__text')
+			modalPrize.appendChild(prizeText)
 		
 		 }, 10000);
 		}
@@ -136,12 +142,10 @@ var form = document.getElementById('sheetdb-form');
           }).then(
               response => response.json()
           ).then((html) => {
-
           });
         });
 		
 		function spin3() {
-			console.log(a[i].id)
 			prize.value = a[i].id;
 			prize.setAttribute('name', 'data[prize]')
 
