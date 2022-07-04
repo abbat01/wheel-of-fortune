@@ -13,6 +13,7 @@ const prize8 = document.querySelector('.prize8');
 
 const prize = document.getElementById('prize');
 const time = document.getElementById('time');
+const start = document.querySelector('.modal--start')
 
 let container = document.querySelector(".container");
 let btn = document.getElementById("spin");
@@ -21,6 +22,9 @@ let btn = document.getElementById("spin");
 
 let modal = document.querySelector('.modal--window')
 
+function closeStart() {
+	start.style.display = 'none'
+}
 function closeModal() {
 modal.style.display = 'none';
 }
