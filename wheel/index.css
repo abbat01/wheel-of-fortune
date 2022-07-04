@@ -459,6 +459,7 @@ z-index: 3000;
 .no-strong {
 	font-weight: 700;
 	font-family: 'Jost', sans-serif;
+	line-height: 16px;
 }
 	.button__start {
 		box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
