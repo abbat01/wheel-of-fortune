@@ -488,7 +488,16 @@ z-index: 3000;
 		width: 100%;
 		font-size: 1.3rem;
 		position: absolute;
-		top: 70%;
+		top: 65%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.inst__text {
+		font-family: 'Jost',sans-serif;
+		font-size: 1.3rem;
+		width: 100%;
+		position: absolute;
+		top: 82%;
 		left: 50%;
 		transform: translateX(-50%);
 	}

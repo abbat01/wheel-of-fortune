@@ -49,7 +49,7 @@ let rand;
 let i;
 let randNumber
 		function spin1 () {
-			a = [{id: 'Секретный подарок из Алтая', int: 3},{id: '10% скидка на любое наше путешествие', int: 20},{id: 'Именное полотенце от Fresh Adventures', int: 2},{id: '5% скидка на любое наше путешествие', int: 300},{id: 'Именная майка от Fresh Adventures', int: 2},{id: 'Секретный подарок из Гималаев', int: 3}, {id: 'Путешествие в Полесье', int: 1}, {id: '50% скидка на путешествие в Каппадокию', int: 0}];
+			a = [{id: 'Секретный подарок из Алтая', int: 3},{id: '7% скидка на любое наше путешествие', int: 20},{id: 'Именное полотенце от Fresh Adventures', int: 2},{id: '5% скидка на любое наше путешествие', int: 300},{id: 'Именная майка от Fresh Adventures', int: 2},{id: 'Секретный подарок из Гималаев', int: 3}, {id: 'Путешествие в Полесье', int: 1}, {id: '50% скидка на путешествие в Каппадокию', int: 0}];
 
 
 		sum = 0;
@@ -71,7 +71,7 @@ return randNumber = a[i].id
 		if (a[i].id === 'Секретный подарок из Алтая') {
 			container.style.transform = 'rotate(1080deg)'
 		}
-		if (a[i].id === '10% скидка на любое наше путешествие') {
+		if (a[i].id === '7% скидка на любое наше путешествие') {
 			container.style.transform = 'rotate(1025deg)'
 		}
 		if (a[i].id === 'Именное полотенце от Fresh Adventures') {
@@ -96,6 +96,7 @@ return randNumber = a[i].id
 			container.style.filter = 'blur(4px)'
 			const modalPrize = document.querySelector('.modal--prize');
 			const prizeText = document.createElement('p');
+			const instText = document.createElement('p')
 			
 			circleC.style.top = '48.5%'
 			modalPrize.style.display = 'block';
@@ -103,7 +104,7 @@ return randNumber = a[i].id
 			if (a[i].id === 'Секретный подарок из Алтая') {
 				prize1.style.display = 'flex'
 			}
-			if (a[i].id === '10% скидка на любое наше путешествие') {
+			if (a[i].id === '7% скидка на любое наше путешествие') {
 				prize2.style.display = 'flex'
 			}
 			if (a[i].id === 'Именное полотенце от Fresh Adventures') {
@@ -127,6 +128,9 @@ return randNumber = a[i].id
 			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с вами в ближайшее время<br> &#128155;'
 			prizeText.classList.add('prize__text')
 			modalPrize.appendChild(prizeText)
+			instText.innerHTML = 'А ты пока сделай репост в Инстаграм,<br>мы проверим &#128521;'
+			instText.classList.add('inst__text')
+			modalPrize.appendChild(instText)
 		
 		 }, 10000);
 		}
