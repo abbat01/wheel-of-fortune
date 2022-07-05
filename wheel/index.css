@@ -502,6 +502,7 @@ z-index: 3000;
 	}
 	.validateBtn {
 		cursor: pointer;
+		background-color: orange;
 	}
 	.form__warning {
 		color: red;
