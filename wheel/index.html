@@ -55,16 +55,17 @@
           method="post"
           id="sheetdb-form"
           name="myForm"
+          class="form"
         >
           <div class="group">
-            <input type="text" name="data[first name]" required />
+            <input type="text" name="data[first name]" placeholder=" " required />
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Имя фамилия</label>
           </div>
 
           <div class="group">
-            <input type="text" name="data[screenshot]" required />
+            <input type="text" name="data[screenshot]" placeholder=" " required />
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Ник в инстаграме</label>
@@ -75,18 +76,21 @@
               type="tel"
               id="phone"
               name="data[phone]"
-              pattern="[0-9]+"
+              pattern='375\s{0,}\{0,1}(([2]{1}([5]{1}|[9]{1})|([3]{1}[3]{1})|([4]{1}[4]{1}))\)\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}'
+              placeholder="375 __ _______"
               required
             />
             <span class="highlight"></span>
             <span class="bar"></span>
+            <span class="form__warning js__warning">Это поле должно содержать телефон в формате +7 (123) 456-78-90</span>
             <label>Мобильный телефон</label>
           </div>
 
           <div class="group">
-            <input type="text" name="data[email]" required />
+            <input placeholder="example@mail.ru" type="text" name="data[email]" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" required />
             <span class="highlight"></span>
             <span class="bar"></span>
+            <span class="form__warning">Это поле должно содержать E-Mail в формате example@site.com</span>
             <label>Электронная почта</label>
           </div>
 
@@ -104,16 +108,7 @@
             <label>time</label>
           </div>
 
-          <button
-            class="button-9"
-            role="button"
-            type="submit"
-            name="send"
-            value="button"
-            onclick=" closeModal(); spin2()"
-          >
-            Отправить
-          </button>
+          <input type="submit" class="validateBtn">
         </form>
       </div>
     </div>
@@ -162,5 +157,6 @@
     </div>
     <div class="figures"></div>
     <div class="circleC"><img src="./assets/images/Компасс без потёртостей жёлтый.png" alt=""></div>
+    <script src="//sheetdb.io/api/js"></script>
   </body>
 </html>

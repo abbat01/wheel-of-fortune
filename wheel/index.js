@@ -9,6 +9,7 @@ const prize5 = document.querySelector('.prize5');
 const prize6 = document.querySelector('.prize6');
 const prize7 = document.querySelector('.prize7');
 const prize8 = document.querySelector('.prize8');
+const formVal = document.querySelector('.form')
 
 
 const prize = document.getElementById('prize');
@@ -18,9 +19,17 @@ const start = document.querySelector('.modal--start')
 let container = document.querySelector(".container");
 let btn = document.getElementById("spin");
 
-
-
 let modal = document.querySelector('.modal--window')
+
+const validateBtn = document.querySelector('.validateBtn')
+
+formVal.addEventListener('submit', function(e){
+	e.preventDefault()
+	if (true) {
+		closeModal();
+		spin2()
+	}
+})
 
 function closeStart() {
 	start.style.display = 'none'
@@ -64,6 +73,7 @@ let randNumber
 		i++;
 		}
 return randNumber = a[i].id
+
 		}
 		
 	function spin2() {
@@ -92,6 +102,7 @@ return randNumber = a[i].id
 		if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 			container.style.transform = 'rotate(2205deg)'
 		}
+		
 		setTimeout(() => { 
 			container.style.filter = 'blur(4px)'
 			const modalPrize = document.querySelector('.modal--prize');
@@ -125,11 +136,12 @@ return randNumber = a[i].id
 			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 				prize8.style.display = 'flex'
 			}
-			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с вами в ближайшее время<br> &#128155;<br>А ты пока сделай репост в Инстаграм,<br>мы проверим &#128521;'
+			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с тобой в ближайшее время<br> &#128155;<br>А ты пока сделай репост в Инстаграм,<br>мы проверим &#128521;'
 			prizeText.classList.add('prize__text')
 			modalPrize.appendChild(prizeText)
 		
 		 }, 10000);
+		 
 		}
 
 
@@ -145,6 +157,7 @@ var form = document.getElementById('sheetdb-form');
           ).then((html) => {
           });
         });
+
 		
 		function spin3() {
 			prize.value = a[i].id;
@@ -163,7 +176,7 @@ var form = document.getElementById('sheetdb-form');
     alert("Name must be filled out");
     return false;
   }
-		}
+	}
 		
 
 		function spin6() {
@@ -192,15 +205,23 @@ var form = document.getElementById('sheetdb-form');
 			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 				container.style.transform = 'rotate(2205deg)'
 			}
+			
 		}
 
 		
-
-
-
-
-
-
-
-
 		
+		SheetDB.read('https://sheetdb.io/api/v1/f1ba5r01b26dx', {}).then(function(result){
+			console.log(result.length)
+			if (result.length > 100) {
+				a[0].int = 0;
+				a[1].int = 0;
+				a[2].int = 0;
+				a[3].int = 5000;
+				a[4].int = 0;
+				a[5].int = 0;
+				a[6].int = 0;
+				a[7].int = 0;
+			}
+		  }, function(error){
+			console.log(error);
+		  });

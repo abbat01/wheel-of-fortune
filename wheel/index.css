@@ -161,16 +161,17 @@ background: linear-gradient(90deg, rgba(0,0,0,0.9542191876750701) 0%, rgba(255,1
 	border-bottom:1px solid #757575;
   }
   input:focus 		{ outline:none; }
+  input:invalid:not(:placeholder-shown) { border-bottom: 1px solid red;}
   
   /* LABEL ======================================= */
   label 				 {
 	color:#999; 
-	font-size:18px;
+	font-size:8px;
 	font-weight:normal;
 	position:absolute;
 	pointer-events:none;
 	left:5px;
-	top:10px;
+	top:2px;
 	transition:0.2s ease all; 
 	-moz-transition:0.2s ease all; 
 	-webkit-transition:0.2s ease all;
@@ -491,6 +492,23 @@ z-index: 3000;
 		top: 60%;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+	#time {
+		opacity: 0;
+		margin-top: 100px;	
+	}
+	.none {
+		margin-top: 100px;
+	}
+	.validateBtn {
+		cursor: pointer;
+	}
+	.form__warning {
+		color: red;
+ 		text-align: left;
+  		font-size: 12px;
+  		margin-top: 3px;
+  		display: none
 	}
 @media (max-width: 1440px) {
 	.container {
