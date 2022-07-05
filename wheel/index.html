@@ -2,109 +2,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./wheel.css" />
+    <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./index.js" defer></script>
     <title>Spin Wheel</title>
   </head>
   <body>
+    <div class="modal--start">
+      <img src="./assets/images/Компасс без потёртостей жёлтый.png" alt="">
+<h1>УСЛОВИЯ УЧАСТИЯ:</h1>
+<p>Для того, чтобы участвовать<br> в нашем Fresh-колесе, необходимо<br> выполнить следующие условия:</p>
+  <p class="no-strong">1. Сделать репост нашего последнего поста<br> в Инстаграм себе в истории;</p>
+  <p class="no-strong">2. Отметить на этой истории аккаунт @fresh.adventures</p>
+
+<h2>ВНИМАНИЕ!</h2>
+  <p class="no-strong">1. Если условия не будут выполнены, то участие<br> в колесе<span class="red"> не будет засчитано.</span></p>
+ <p class="no-strong"> 2. Один аккаунт в Инстаграм - одна прокрутка.<br>  Участвовать можно <span class="red">только один раз!</span></p>
+
+  <button class="button button__start" role="button" type="submit" onclick="closeStart()">Я принимаю условия!</button>
+    </div>
+    <div class="modal--prize">
+      <div class="prize__image prize1"></div>
+      <div class="prize__image prize2"></div>
+      <div class="prize__image prize3"></div>
+      <div class="prize__image prize4"></div>
+      <div class="prize__image prize5"></div>
+      <div class="prize__image prize6"></div>
+      <div class="prize__image prize7"></div>
+      <div class="prize__image prize8"></div>
+    </div>
+
     <div class="modal--window">
       <h2>Перед прокруткой укажите информацию о себе</h2>
+      <h4>
+        Внимание! Необходимо заполнить все поля, иначе результат не будет
+        засчитан
+      </h4>
       <div class="inputs">
-        <script type="text/javascript">
-          var submitted = false;
-        </script>
-        <iframe
-          name="hidden_iframe"
-          id="hidden_iframe"
-          style="display: none"
-          onload="if(submitted)
-        {modal.style.display = 'none';}"
-        ></iframe>
         <form
-          action="111111111"
+          action="https://sheetdb.io/api/v1/f1ba5r01b26dx"
+          onsubmit="return validateForm()"
           method="post"
-          target="hidden_iframe"
-          onsubmit="submitted=true;"
+          id="sheetdb-form"
+          name="myForm"
         >
           <div class="group">
-            <input
-              type="text"
-              aria-describedby="i4"
-              name="entry.263647340"
-              required
-            />
+            <input type="text" name="data[first name]" required />
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label> First Name</label>
+            <label>Имя фамилия</label>
           </div>
 
           <div class="group">
-            <input
-              type="text"
-              aria-describedby="i11"
-              name="entry.1445837185"
-              required
-            />
+            <input type="text" name="data[screenshot]" required />
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Last Name</label>
+            <label>Ник в инстаграме</label>
           </div>
 
           <div class="group">
             <input
               type="tel"
               id="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              aria-describedby="i18"
-              name="entry.1857657097"
+              name="data[phone]"
+              pattern="[0-9]+"
               required
             />
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Mobile Phone</label>
+            <label>Мобильный телефон</label>
           </div>
 
           <div class="group">
-            <input
-              type="text"
-              aria-describedby="i25"
-              name="entry.759199356"
-              required
-            />
+            <input type="text" name="data[email]" required />
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Email</label>
+            <label>Электронная почта</label>
           </div>
+
+          <div class="group none">
+            <input type="text" id="prize" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>prize</label>
+          </div>
+
+          <div class="group none">
+            <input type="text" id="time" required />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>time</label>
+          </div>
+
           <button
             class="button-9"
             role="button"
             type="submit"
             name="send"
             value="button"
-            onclick="closeModal()"
+            onclick=" closeModal(); spin2()"
           >
             Отправить
           </button>
         </form>
       </div>
     </div>
-    <button id="spin">Spin</button>
-    <span class="arrow"></span>
+    <h1 class="main__heading">Учавствуй в беспроигрышной лотерее</h1>
+    <p class="heading__p">
+      и получи шанс выиграть
+      <span class="red strong">бесплатное путешествие,</span> скидку
+      <span class="red"><br />в 5%, 7% и 50%,</span> а также секретные подарки
+      из разных стран<br />
+      и многое другое!
+    </p>
+
     <div class="container">
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
-      <div class="four">4</div>
-      <div class="five">5</div>
-      <div class="six">6</div>
-      <div class="seven">7</div>
-      <div class="eight">8</div>
+      <div class="one text">
+        Секретный подарок<br />
+        из Алтая
+      </div>
+      <div class="two text">
+      7% скидка<br />
+        на любое наше путешествие
+      </div>
+      <div class="three text">
+        Именное полотенце<br />
+        от Fresh Adventures
+      </div>
+      <div class="four text">
+        5% скидка на любое<br />
+        наше путешествие
+      </div>
+      <div class="five text">
+        Именная майка<br />
+        от Fresh Adventures
+      </div>
+      <div class="six text">
+        Секретный подарок<br />
+        из Гималаев
+      </div>
+      <div class="seven text">Путешествие в Полесье</div>
+      <div class="eight text">
+        50% скидка на путешествие<br />
+        в Каппадокию
+      </div>
     </div>
+    <div class="footer__button">
+      <button class="footer__btn">Крутить!</button>
+    </div>
+    <div class="figures"></div>
+    <div class="circleC"><img src="./assets/images/Компасс без потёртостей жёлтый.png" alt=""></div>
   </body>
 </html>
