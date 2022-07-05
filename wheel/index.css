@@ -488,7 +488,7 @@ z-index: 3000;
 		width: 100%;
 		font-size: 1.1rem;
 		position: absolute;
-		top: 58%;
+		top: 60%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -497,7 +497,7 @@ z-index: 3000;
 		font-size: 1.1rem;
 		width: 100%;
 		position: absolute;
-		top: 70%;
+		top: 75%;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -593,26 +593,7 @@ z-index: 3000;
 	.prize8 {
 		background-image: url(./assets/images/8.PNG);
 	}
-	.prize__text {
-		font-family: 'Jost', sans-serif;
-		width: 100%;
-		font-size: 1.1rem;
-		position: absolute;
-		top: 62%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	.inst__text {
-		font-family: 'Jost',sans-serif;
-		font-size: 1.1rem;
-		width: 100%;
-		position: absolute;
-		top: 76%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
 		
-
 }
 @media (max-width: 320px) {
 	.container {
