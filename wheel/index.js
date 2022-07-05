@@ -125,12 +125,9 @@ return randNumber = a[i].id
 			if (a[i].id === '50% скидка на путешествие в Каппадокию') {
 				prize8.style.display = 'flex'
 			}
-			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с вами в ближайшее время<br> &#128155;'
+			prizeText.innerHTML = 'Спасибо за участие!<br>Мы свяжемся с тобой в ближайшее время<br> &#128155;<br>А ты пока сделай репост в Инстаграм,<br>мы проверим &#128521;'
 			prizeText.classList.add('prize__text')
 			modalPrize.appendChild(prizeText)
-			instText.innerHTML = 'А ты пока сделай репост в Инстаграм,<br>мы проверим &#128521;'
-			instText.classList.add('inst__text')
-			modalPrize.appendChild(instText)
 		
 		 }, 10000);
 		}

@@ -492,15 +492,6 @@ z-index: 3000;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	.inst__text {
-		font-family: 'Jost',sans-serif;
-		font-size: 1.1rem;
-		width: 100%;
-		position: absolute;
-		top: 75%;
-		left: 50%;
-		transform: translateX(-50%);
-	}
 @media (max-width: 1440px) {
 	.container {
 		width: 350px;
