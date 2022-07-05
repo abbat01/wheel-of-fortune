@@ -211,7 +211,6 @@ var form = document.getElementById('sheetdb-form');
 		
 		
 		SheetDB.read('https://sheetdb.io/api/v1/f1ba5r01b26dx', {}).then(function(result){
-			console.log(result.length)
 			if (result.length > 100) {
 				a[0].int = 0;
 				a[1].int = 0;
