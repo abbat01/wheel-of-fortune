@@ -513,10 +513,16 @@ z-index: 3000;
   		margin-top: 3px;
   		display: none
 	}
+	.iti__flag {background-image: url("path/to/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("path/to/flags@2x.png");}
+}
 @media (max-width: 1440px) {
 	.container {
 		width: 340px;
 		height: 340px;
+		padding: 0 15px;
 		background-image: url(./assets/images/\ .jpg);
 	}
 	.container div{
