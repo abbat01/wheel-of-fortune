@@ -517,6 +517,7 @@ z-index: 3000;
 	.container {
 		width: 340px;
 		height: 340px;
+		padding: 0 15px;
 		background-image: url(./assets/images/\ .jpg);
 	}
 	.container div{
