@@ -224,3 +224,8 @@ var form = document.getElementById('sheetdb-form');
 		  }, function(error){
 			console.log(error);
 		  });
+
+		  let input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    utilsScript: 'js/utils.js'
+  });
