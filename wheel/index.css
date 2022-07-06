@@ -515,8 +515,8 @@ z-index: 3000;
 	}
 @media (max-width: 1440px) {
 	.container {
-		width: 350px;
-		height: 350px;
+		width: 340px;
+		height: 340px;
 		background-image: url(./assets/images/\ .jpg);
 	}
 	.container div{
@@ -534,7 +534,7 @@ z-index: 3000;
 		font-weight:bold;
 		font-family:sans-serif;
 		color:#fff;
-		left:100px;
+		left:95px;
 		font-size: 12px;
 	}
 	h2 {
