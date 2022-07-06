@@ -6,7 +6,7 @@ body{
 	box-sizing: border-box;
 	font-family: 'Jost', sans-serif;
 	margin:0;
-	padding:0;
+	padding: 0;
 	background-image: url(./assets/images/IMG_8541.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -20,8 +20,8 @@ body{
 }
 
 .container{
-	width:520px;
-	height:520px;
+	width:500px;
+	height:500px;
 	border-radius:50%;
 	border:10px solid transparent;
 	background-image: url(./assets/images/\ .jpg);
@@ -60,7 +60,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(255,134,0,1) 6%, rgba(
 	height: 50px;
 	background: black;
 	z-index: 20;
-	top: 50.5%;
+	top: 49%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	border-radius: 50%;
@@ -541,10 +541,10 @@ z-index: 3000;
 		text-align: center;
 	}
 	h1 {
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 	.heading__p {
-		font-size: 0.7rem;
+		font-size: 0.6rem;
 		text-align: center;
 		max-width: 370px;
 	}
